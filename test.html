@@ -97,5 +97,25 @@
                     </tbody>
                 </table>
             </div>
+            <div style="padding-bottom: 150px;">
+                <script>
+                    let me = 'Привет, Я Мульхам, мне 20 лет и я студент третьего курса по '+
+                    'специальности программной инженерии в Южно-Уральском государственном университете. Я ещё музыкант,'+
+                    'играю на гитаре и пишу музыку. Могу сказать что владею 3 языка - Арабский(Родной язык), Английский(c1) и конечно Русский.'+
+                    'Считаю что я быстро учусь и адаптирую под разными ситуациями, приехал 2,5 года назад из Сирии и сейчас у меня и друзья '+ 
+                    'и знание языка и културы. Жду курс и до встречи :)'+
+                    '';
+                    function aboutme(){
+                        if(document.querySelector('h3').innerHTML===''){
+                            document.querySelector('h3').innerHTML=me;
+                        }
+                        else{
+                            document.querySelector('h3').innerHTML=null;
+                        }
+                    }
+                </script>
+                <button style="margin-left: 10px;" onclick="aboutme()">Нажми меня</button>
+                <h3 style="padding: 10px;"></h3>
+            </div>
         </body>
 </html>
